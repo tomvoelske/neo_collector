@@ -79,9 +79,9 @@ class Device:
 		if self.operatingsystem == 'ios' or self.operatingsystem == 'catos':
 
 			self.devicethread = threading.Thread(target=ios_catos, args=(self.region, self.operatingsystem,
-																		 self.connectionname, self.tunnel,
-																		 self.loginobject, self.backuploc, self.reportlist,
-																		 self.errorlist))
+										     self.connectionname, self.tunnel,
+										     self.loginobject, self.backuploc, self.reportlist,
+										     self.errorlist))
 
 		else:
 			self.valid = False

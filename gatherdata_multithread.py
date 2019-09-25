@@ -192,7 +192,7 @@ def gather(todaydate, startline=0):
 
 	while count < n_devices:
 
-		chunksize = min(250, n_devices)
+		chunksize = min(250, n_devices - count)
 		devicechunk = Device.devicelist[count: count + chunksize]
 		for device in devicechunk:
 			device.start_gather()
